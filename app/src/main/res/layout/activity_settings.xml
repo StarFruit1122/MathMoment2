@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FC5C5"
+    android:backgroundTint="#496780"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/ChooseType"
+        android:layout_width="240dp"
+        android:layout_height="64dp"
+        android:text="Type of Numbers:"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/ChooseRange"
+        android:layout_width="341dp"
+        android:layout_height="83dp"
+        android:text="Range of Number Operations"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
+    <Button
+        android:id="@+id/Button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="Twenty"
+        android:text="1-20"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/settingscolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseRange" />
+
+    <Button
+        android:id="@+id/Button50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="Fifty"
+        android:text="1-50"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/settingscolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/Button20"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseRange" />
+
+    <TextView
+        android:id="@+id/ChooseDifficulty"
+        android:layout_width="385dp"
+        android:layout_height="59dp"
+        android:text="Difficulty:"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528" />
+
+    <Button
+        android:id="@+id/EasyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="Easy"
+        android:text="Easy"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/settingscolor"
+        app:layout_constraintEnd_toStartOf="@+id/MediumButton"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseDifficulty" />
+
+    <Button
+        android:id="@+id/MediumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="Medium"
+        android:text="Medium"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/settingscolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseDifficulty" />
+
+    <Button
+        android:id="@+id/HardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:onClick="Hard"
+        android:text="Hard"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/settingscolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/MediumButton"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseDifficulty" />
+
+    <Button
+        android:id="@+id/Button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:enabled="true"
+        android:onClick="Ten"
+        android:text="1-10"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/settingscolor"
+        app:layout_constraintEnd_toStartOf="@+id/Button20"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseRange" />
+
+    <Button
+        android:id="@+id/IntegerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:enabled="true"
+        android:onClick="Integers"
+        android:text="Integers"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/settingscolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseType" />
+
+    <Button
+        android:id="@+id/DecimalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="Decimals"
+        android:text="Decimals"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/settingscolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toEndOf="@+id/IntegerButton"
+        app:layout_constraintTop_toBottomOf="@+id/ChooseType" />
+
+    <TextView
+        android:id="@+id/SetWin"
+        android:layout_width="240dp"
+        android:layout_height="64dp"
+        android:text="Goal:"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
+
+    <Button
+        android:id="@+id/SetSettingsButton"
+        android:layout_width="156dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="Play"
+        android:text="Play!"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/playbuttoncolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="286dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:max="1000"
+        android:min="200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SetWin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

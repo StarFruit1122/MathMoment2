@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#51A59D"
+    tools:context=".RulePage">
+
+    <Button
+        android:id="@+id/ReadyButton"
+        android:layout_width="415dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/readybuttoncolor"
+        android:onClick="ActivateSecondPage"
+        android:text="Next Page"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/RuleTitle"
+        android:layout_width="202dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Rules:"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BoostDescription"
+        android:layout_width="400dp"
+        android:layout_height="495dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:text=" Reach a final value of your choice (editable in settings) through addition and subtraction! \n \n Move your robot through the grid using the arrow keys. Each square contains a value which will increase or decrease the number of points you have. But be careful not to let the red figure touch you! If it does, you'll lose 30 points. \n \nSome squares will contain addition and subtraction problems. Answer them correctly, and you'll get 20 additional points.
+Answer them incorrectly, and you'll lose 20 points. \n \nIf your value becomes less than zero, try again. \n \n You can do this! Are you ready?"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
